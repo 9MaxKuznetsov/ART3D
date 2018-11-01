@@ -1,0 +1,23 @@
+.gallery-list {
+    width: inherit;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.gallery-list .gallery-list__item {
+    cursor: pointer;
+}
+
+.gallery-list__item--active img {
+    transform: scale(1.45);
+    outline: 1px solid @border;
+}
+
+.gallery-list__item:not(.gallery-list__item--active) img {
+    filter: grayscale(100%);
+}
