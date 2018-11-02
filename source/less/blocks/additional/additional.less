@@ -4,27 +4,31 @@
   align-items: center;
   width: 252px;
   margin: 0 auto;
-  padding-bottom: 12px;
+  padding-bottom: 17px;
+  cursor: pointer;
 
   background-color: #1e1d2c;
 }
 
 .additional .additional__title {
+  position: relative;
   margin-bottom: 10px;
-  padding: 4px 0 0 0;
+  padding: 2px 0 0 0;
 
   font-size: 14px;
   text-align: center;
   color: white;
 
   border-bottom: 1px dotted #bca99a;
-  cursor: pointer;
 }
 
-.additional .additional__button {
+.additional__title::before {
+  position: absolute;
+  content: "";
   width: 20px;
   height: 7px;
-  margin: 0 auto;
+  left: 92px;
+  top: 32px;
 
   background-color: transparent;
   background-image: url("../img/arrow.png");

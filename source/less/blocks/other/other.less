@@ -6,3 +6,19 @@
   color: #b0b6bd;
   text-decoration: underline;
 }
+
+.other__download {
+  position: relative;
+}
+
+.other__download::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -20px;
+
+  width: 14px;
+  height: 18px;
+
+  background-image: url("../img/pdf.png");
+}

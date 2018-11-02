@@ -30,10 +30,19 @@
 }
 
 .news .news__link {
+    position: relative;
     font-size: 11px;
     color: #86ae63;
     text-align: left;
     font-weight: bold;
     text-decoration: underline;
     padding-top: 12px;
+}
+
+.news__link::before {
+  position: absolute;
+  content: "→";
+  width: 5px;
+  height: 2px;
+  left: 72px;
 }

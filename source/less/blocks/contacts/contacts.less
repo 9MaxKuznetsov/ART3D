@@ -13,9 +13,22 @@
 }
 
 .contacts .contacts__call-me {
+  position: relative;
   font-weight: bold;
   font-size: 17px;
   color: #86ae63;
   text-decoration: underline;
   padding-left: 45px;
+}
+
+.contacts__call-me::before {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 16px;
+
+  left: 21px;
+  top: 5px;
+
+  background-image: url("../img/phone.png");
 }
